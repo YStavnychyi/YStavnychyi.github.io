@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Klinika dentystyczna</title>
+        <link type = "text/css" rel="stylesheet" href="css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+        <!-- Google Fonts Roboto -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- Material Design Bootstrap -->
+        <link rel="stylesheet" href="css/mdb.min.css">
+        <!-- Your custom styles (optional) -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    </head>
+
+    <body>
+        <header>
+            <nav class = "navbar navbar-expand-lg navbar-light fixed-top scrolling-navbar">
+                <div class = "container">
+                    <!--Logo-->
+                    <a class= "navbar-brand" href="#">
+                        <img class="logo" src="https://cdn.pixabay.com/photo/2018/03/22/05/52/dentist-3249382_1280.png" alt="Dental Smile"> 
+                    </a>
+
+                    <button class = "navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+                    aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse" id="basicExampleNav">
+                        <!--Links-->
+                        <ul class="navbar-nav mr-auto smooth-scroll">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">O klinice</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#usługi">Usługi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#spec">Specjaliści</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#kontakty">Kontakty</a>
+                            </li>
+                        </ul>
+                        <div class="modal fade" id="feedbackFormModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true" data-backdrop="false">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header text-center">
+                                        <h4 class="modal-title w-100 font-weight-bold">Napisz do nas</h4>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <form>
+                                        <div class="modal-body mx-3">
+                                            <div class="md-form mb-5">
+                                                <i class="fas fa-user prefix grey-text"></i>
+                                                <input type="text" id="form3" class="form-control validate ml-5" required>
+                                                <label data-error="wrong" data-success="right" for="form3">Twoje imię</label>
+                                            </div>
+    
+                                            <div class="md-form mb-5">
+                                                <i class="fas fa-envelope prefix grey-text"></i>
+                                                <input type="text" id="form2" class="form-control validate ml-5" required>
+                                                <label data-error="wrong" data-success="right" for="form2">E-mail</label>
+                                            </div>
+    
+                                            <div class="md-form mb-5">
+                                                <i class="fas fa-tag prefix grey-text"></i>
+                                                <input type="text" id="form1" class="form-control validate ml-5">
+                                                <label data-error="wrong" data-success="right" for="form1">Temat</label>
+                                            </div>
+    
+                                            <div class="md-form">
+                                                <i class="fas fa-pencil-alt prefix grey-text"></i>
+                                                <textarea type="text" id="form0" class="md-textarea form-control" rows="4" required></textarea>
+                                                <label data-error="wrong" data-success="right" for="form0">Twoja wiadomość</label>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                            <button class="btn btn-cyan">Wysłać</button>
+                                        </div>
+                                    </form>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-outline-info waves-effect btn-sm" data-toggle="modal" data-target="#feedbackFormModal">Skontaktuj</button>
+                    </div>
+                    
+                </div>
+            </nav>
+
+            <div id="intro" class="view">
+                <div class="mask rgba-blue-slight">
+                    <div class="container-fluid d-flex align-items-center justify-content-start h-100 w-75">
+                        <div class="row d-flex justify-content-start mx-1">
+                            <div class="nameClinic col-md-15 ">
+                                <h2 class="display-1 font-weight-bold pt-5 mb-2">Dental Smile</h2>
+                                <hr class="hr-light">
+                                <h4 >Usługi dentystyczne od doświadczonych specjalistów</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- O Klinice -->
+            <section class="text-center" id="about">
+                <div class="container">
+                    <h2 class="font-weight-bold mb-5">Klinika dentystyczna - Dental Smile</h2>
+                    <!--Grid column-->
+                    <div class="col-md-12">
+                        <!-- Description -->
+                        <h4 class="grey-text">Nasza klinika zajmuje pierwsze miejsce wśród najbardziej zaawansowanych
+                            centrów dentystycznych w Krakowie. Klinika została założona w 1993 roku. Świadczymy
+                            usługi dentystyczne zgodnie z wysokimi międzynarodowymi standardami.
+                        </h4>
+                    </div>
+                    <!--Grid column-->
+                </div>
+            </section>
+            <!-- Usługi -->
+            <section class="featured-services column-view blue lighten-5" id="usługi">
+                <div class="container">
+                    <div class="row clearfix">
+
+                        <article id="leczenie_z" class="col-md-6 col-sm-6 col-12 column-box wow animated fadeInRight"
+                        data-wow-delay="0ms" data-wow-duration="1000ms">
+                            <div class="inner-box">
+                                <figure id="image_zęby" class="image"></figure>
+                                <div class="post-content clearfix grey-text float-right">
+                                    <h3 class="text-center" style="margin-top: 90px;">Leczenie zębów</h3>
+                                </div>
+                                <div class="overlay-box">
+                                    <h3 style="margin-top: 52px; text-align: center;">Denty Smile - Leczenie zębów</h3>
+                                    W naszym centrum stomatologicznym zajmujemy się leczeniem i zapobieganiem jednej
+                                    z najbardziej rozpowszechnionych chorób zębów - próchnicy.
+                                </div>                
+                            </div>
+                        </article>
+
+                        <article id="leczenie_z" class="col-md-6 col-sm-6 col-xs-12 column-box wow animated fadeInRight"
+                        data-wow-delay="0ms" data-wow-duration="1000ms">
+                            <div class="inner-box">
+                                <figure id="image_stomat" class="image"></figure>
+                                <div class="post-content clearfix blue lighten-5 grey-text float-right">
+                                    <h3 class="text-center" style="margin-top: 90px;">Stomatologia estetyczna</h3>
+                                </div>
+                                <div class="overlay-box">
+                                    <h3 style="margin-top: 52px; text-align: center;">Stomatologia estetyczna</h3>
+                                    W Dental Smile wykonają Państwo wszystkie zabiegi związane z odtworzeniem i poprawą estetyki uśmiechu.
+                                </div>
+                            </div>
+                        </article>
+
+                        <article id="leczenie_z" class="col-md-6 col-sm-6 col-xs-12 column-box wow animated fadeInRight"
+                        data-wow-delay="0ms" data-wow-duration="1000ms">
+                            <div class="inner-box">
+                                <figure id="image_protetyka" class="image"></figure>
+                                <div class="post-content clearfix blue lighten-5 grey-text float-left">
+                                    <h3 class="text-center" style="margin-top: 90px;">Protetyka</h3>
+                                </div>
+                                <div class="overlay-box">
+                                    <h3 style="margin-top: 52px; text-align: center;">Protetyka</h3>
+                                    W protetyce stomatologicznej specjalizujemy się od lat. Mamy własną pracownię protetyczną w Krakowie 
+                                    funkcjonującą od 1999 r. Wykonujemy najbardziej skomplikowane uzupełnienia protetyczne.
+                                </div>
+                            </div>
+                        </article>
+
+                        <article id="leczenie_z" class="col-md-6 col-sm-6 col-xs-12 column-box wow animated fadeInRight"
+                        data-wow-delay="0ms" data-wow-duration="1000ms">
+                            <div class="inner-box">
+                                <figure id="image_ortodoncja" class="image"></figure>
+                                <div class="post-content clearfix grey-text float-left">
+                                    <h3 class="text-center" style="margin-top: 90px;">Ortodoncja</h3>
+                                </div>
+                                <div class="overlay-box">
+                                    <h3 style="margin-top: 52px; text-align: center;">Ortodonta</h3>
+                                    W naszym centrum stomatologicznym mogą Państwo dokonać kompleksowej korekty wad zgryzu.
+                                </div>
+                            </div>
+                        </article>
+
+                        <article id="leczenie_z" class="col-md-6 col-sm-6 col-xs-12 column-box wow animated fadeInRight"
+                        data-wow-delay="0ms" data-wow-duration="1000ms">
+                            <div class="inner-box">
+                                <figure id="image_implanty" class="image"></figure>
+                                <div class="post-content clearfix grey-text float-left">
+                                    <h3 class="text-center" style="margin-top: 90px;">Ortodoncja</h3>
+                                </div>
+                                <div class="overlay-box">
+                                    <h3 style="margin-top: 52px; text-align: center;">Ortodonta</h3>
+                                    W naszym centrum stomatologicznym mogą Państwo dokonać kompleksowej korekty wad zgryzu.
+                                </div>
+                            </div>
+                        </article>
+
+                        <article id="leczenie_z" class="col-md-6 col-sm-6 col-xs-12 column-box wow animated fadeInRight"
+                        data-wow-delay="0ms" data-wow-duration="1000ms">
+                            <div class="inner-box">
+                                <figure id="image_kanały" class="image"></figure>
+                                <div class="post-content clearfix grey-text blue lighten-5 float-left">
+                                    <h3 class="text-center" style="margin-top: 90px;">Ortodoncja</h3>
+                                </div>
+                                <div class="overlay-box">
+                                    <h3 style="margin-top: 52px; text-align: center;">Ortodonta</h3>
+                                    W naszym centrum stomatologicznym mogą Państwo dokonać kompleksowej korekty wad zgryzu.
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section> 
+            <!-- Specjaliści -->
+            <section class="text-center" id="spec">
+                <div class="container">
+                    <h2 class="font-weight-bold mb-5">Nasze Specjaliści</h2>
+                    <!--Grid column-->
+                    <div class="col-md-12 mb-5">
+                        <!-- Description -->
+                        <h4 class="grey-text">Nasi lekarze to specjaliści ze wszystkich dziedzin stomatologii</h4>
+                    </div>
+                    <!--Grid column-->
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12 mb-lg-0 mb-4">
+                            <div class="view overlay rounded z-depth-1">
+                                <img src="css/img/doctor-1.jpg" class="card-img-top" alt="Doctor-1">
+                                <div class="mask rgba-blue-slight"></div>
+                            </div>
+                            <div class="card-body mb-0">
+                                <h4 class="font-weight-bold my-3">Tomasz Gliwicki</h4>
+                                <h5 class="grey-text">Chirurg dentysta</h5>
+                                <p class="card-text grey-text">Pan Tomasz ma ponad 25-letnie doświadczenie w praktyce dentystycznej.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mb-lg-0 mb-4">
+                            <div class="view overlay rounded z-depth-1">
+                                <img src="css/img/doctor-2.jpg" class="card-img-top" alt="Doctor-1">
+                                <div class="mask rgba-blue-slight"></div>
+                            </div>
+                            <div class="card-body mb-0">
+                                <h4 class="font-weight-bold my-3">Agnieszka Chmur</h4>
+                                <h5 class="grey-text">Dentysta pediatra</h5>
+                                <p class="card-text grey-text">Pani Agnieszka - kierownik stomatolo dziecięcej w naszej klinice;
+                                    praktykuje w naszej klinice od ponad 10 lat.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="view overlay rounded z-depth-1">
+                                <img src="css/img/doctor-3.jpg" class="card-img-top" alt="Doctor-1">
+                                <div class="mask rgba-blue-slight"></div>
+                            </div>
+                            <div class="card-body mb-0">
+                                <h4 class="font-weight-bold my-3">Alicja Łukawska</h4>
+                                <h5 class="grey-text">Dentysta kosmetyczny</h5>
+                                <p class="card-text grey-text">Pani Alicja ćwiczy od 2001 roku. Uprawia wszystkie rodzaje stomatologii estetycznej.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Lista/Galeria -->
+            <section id="lista" class="text-center blue lighten-5">
+                <div class="container">
+                    <div class="col-12">
+                        <h2 class="font-weight-bold mb-5">Dlaczego powinniście wybrać nas?</h2>
+                    </div>
+                    <div class="row text-center text-md-left">
+                        <div class="col-lg-6 col-md-12 mb-5 d-md-flex justify-content-between">
+                            <div class="mb-md-0 mt-4 mx-4">
+                                <img src="https://image.flaticon.com/icons/svg/2185/2185271.svg" alt="equipment" style="max-width: 80px; width: 80px;">
+                            </div>
+                            <div class="mx-4">
+                                <h4 class="font-weight-bold mb-4" >Nowoczesny sprzęt</h4>
+                            <p class="grey-text">Nasza klinika korzysta z najnowszego niemieckiego sprzętu dentystycznego, który posiada wszystkie
+                                niezbędne certyfikaty i licencje</p>
+                            </div>
+                            
+                        </div>
+                        <div class="col-lg-6 col-md-12 mb-5 d-md-flex justify-content-between">
+                            <div class="mb-md-0 mt-4 mx-4">
+                                <img src="https://image.flaticon.com/icons/svg/843/843293.svg" alt="equipment" style="max-width: 80px; width: 80px;">
+                            </div>
+                            <div class="mx-4">
+                                <h4 class="font-weight-bold mb-4" >Kwalifikowani dętyści</h4>
+                            <p class="grey-text">Nasi specjaliści mają wyższe wyksztalcenie zawodowe i najwyższe kwalifikacje.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-12">
+                            <figure class="col-md-4">
+                                <img src="css/img/dental-1.jpg" class="clinicImg img-fluid rounded z-depth-1-half  mb-4">
+                            </figure>
+
+                            <figure class="col-md-4 mb-4">
+                                <img src="css/img/dental-2.jpg" class="clinicImg img-fluid rounded z-depth-1-half">
+                            </figure>
+
+                            <figure class="col-md-4 mb-4">
+                                <img src="css/img/dental-3.jpg" class="clinicImg img-fluid rounded z-depth-1-half">
+                            </figure>
+
+                            <figure class="col-md-4 mb-4">
+                                <img src="css/img/dental-4.jpg" class="clinicImg img-fluid rounded z-depth-1-half">
+                            </figure>
+
+                            <figure class="col-md-4 mb-4">
+                                <img src="css/img/dental-5.jpg" class="clinicImg img-fluid rounded z-depth-1-half">
+                            </figure>
+
+                            <figure class="col-md-4 mb-4">
+                                <img src="css/img/dental-6.jpg" class="clinicImg img-fluid rounded z-depth-1-half">
+                            </figure>
+
+                            <div id="myModal" class="modal">
+                                <span class="close_img" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+                                <img class="modal-content" id="foto">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="page-footer font-small pt-5" id="kontakty">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-lg-5 col-md-12">
+                        <h5 class="font-weight-bold black-text mb-4">Nasz Adres</h5>
+                        <ul class="list-unstyled grey-text">
+                            <li>
+                                <p>
+                                    <i class="fas fa-home mr-3"></i>
+                                    ul. Banacha 300, 30-134 Kraków, Poland
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <i class="fas fa-envelope mr-3"></i>
+                                    dental_smile@gmail.com
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <i class="fas fa-phone mr-3"></i>
+                                    +43 434 343 434
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-7 col-md-12">
+                        <div id="map-container-google-1" class="z-depth-1-half map-container">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.1642213736063!2d19.958035115684986!3d50.10193307942881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165a8eea3a296b%3A0xb0e71771ef4e330f!2sStefana%20Banacha%2C%20Krak%C3%B3w!5e0!3m2!1sru!2spl!4v1594570179098!5m2!1sru!2spl" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright text-center text-dark grey lighten-5 mt-5">
+                2020 © Dental Smile. Design by YeS
+            </div>
+        </footer>
+
+
+        
+        <!-- jQuery -->
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="js/mdb.min.js"></script>
+        <!-- Scrypt for images -->
+        <script type="text/javascript" src="js/lightbox.js"></script>
+
+        <!-- Your custom scripts (optional) -->
+        <script type="text/javascript"></script>
+    </body>
+</html>
+
