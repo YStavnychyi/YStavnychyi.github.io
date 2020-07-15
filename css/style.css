@@ -1,7 +1,7 @@
-html,body,header,#intro{
+html,body,header,#one_page{
     height: 100%;
 }
-#intro{
+#one_page{
     background: url("https://babindentistry.com/wp-content/uploads/2020/06/slide-6_1680x750_acf_cropped.jpg")no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -290,7 +290,7 @@ a.nav-link{
 } */
 
 @media screen and (max-width : 480px){
-  #intro{
+  #one_page{
     background-image: url(img/mobile-device.jpg);
     background-repeat: no-repeat;
     background-position: center center;
