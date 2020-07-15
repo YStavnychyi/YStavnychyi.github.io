@@ -32,11 +32,6 @@ a.nav-link{
   padding-bottom: 100px;
 }
 
-figure{
-  margin: 0;
-  float: left;
-}
-
 .column-view{
   position: relative;
 }
@@ -60,8 +55,8 @@ figure{
 #leczenie_z{
   padding: 0px;
   visibility: visible;
-  animation-duration: 1000ms;
-  animation-delay: 0ms;
+  /* animation-duration: 1000ms;
+  animation-delay: 0ms; */
 }
 
 #image_zęby{
@@ -294,7 +289,7 @@ figure{
   }
 } */
 
-@media only screen and (max-width : 480px){
+@media screen and (max-width : 480px){
   #intro{
     background-image: url(img/mobile-device.jpg);
     background-repeat: no-repeat;
