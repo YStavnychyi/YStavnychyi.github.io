@@ -273,7 +273,9 @@ figure{
   position: absolute;
 }
 
-@media only screen and (max-device-width: 767px){
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px){
   #intro{background-image: url(img/mobile-device.jpg);}
 }
 
