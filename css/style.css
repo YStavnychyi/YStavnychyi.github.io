@@ -273,7 +273,7 @@ figure{
   position: absolute;
 }
 
-@media screen and (max-width : 767px){
+@media screen and (max-width : 769px){
   #intro{
     background-image: url(img/mobile-device.jpg);
     /* -webkit-background-size: cover;
@@ -282,6 +282,12 @@ figure{
     background-size: cover; */
   }
 }
+/* 
+@media only screen and (max-width : 480px){
+  #intro{
+    background-image: url(img/mobile-device.jpg);
+  }
+} */
 
 @media only screen and (max-width: 700px){
   .modal-content{width: 100%;}
@@ -302,12 +308,12 @@ figure{
       
     }
   }
-/* 
+
 @media (max-width: 376px){
     .w-75{
       width: 100%!important;
     }
-} */
+}
 
 
 
