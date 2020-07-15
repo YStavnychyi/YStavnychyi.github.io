@@ -273,21 +273,19 @@ figure{
   position: absolute;
 }
 
-@media screen and (max-width : 769px){
-  #intro{
-    background-image: url(img/mobile-device.jpg);
-    /* -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; */
-  }
-}
-/* 
-@media only screen and (max-width : 480px){
+/* @media screen and (max-width : 769px){
   #intro{
     background-image: url(img/mobile-device.jpg);
   }
 } */
+
+@media only screen and (max-width : 480px){
+  #intro{
+    background-image: url(img/mobile-device.jpg);
+    height: 100%;
+    margin: auto 0;
+  }
+}
 
 @media only screen and (max-width: 700px){
   .modal-content{width: 100%;}
