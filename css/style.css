@@ -273,15 +273,15 @@ figure{
   position: absolute;
 }
 
-/* @media screen and (max-width : 767px){
+@media screen and (max-width : 767px){
   #intro{
-    background-image: url(img/mobile-device.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
+    background-image: url(img/mobile-device.jpg);
+    /* -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: cover; */
   }
-} */
+}
 
 @media only screen and (max-width: 700px){
   .modal-content{width: 100%;}
@@ -302,12 +302,12 @@ figure{
       
     }
   }
-
+/* 
 @media (max-width: 376px){
     .w-75{
       width: 100%!important;
     }
-}
+} */
 
 
 
