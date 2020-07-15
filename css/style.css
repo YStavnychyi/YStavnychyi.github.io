@@ -273,6 +273,9 @@ figure{
   position: absolute;
 }
 
+@media only screen and (max-width: 767px){
+  #intro{background-image: url(img/mobile-device.jpg);}
+}
 
 @media only screen and (max-width: 700px){
   .modal-content{width: 100%;}
