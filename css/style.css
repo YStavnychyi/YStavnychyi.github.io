@@ -1,20 +1,19 @@
 #one_page{
-    background: url("img/mobile-device.jpg");
+    background: url("https://upload.wikimedia.org/wikipedia/commons/a/ab/Dental-Hygienist.jpg");
     background-size: cover;
     background-position: center;
     width: 100%;
     height: 100vh;
-    /* margin-top: 86px; */
+    /* margin-top: 89px; */
 }
 
 h2{
   font-family: 'Open Sans',Arial,sans-serif;
+  text-transform: uppercase;
 }
 
-a.nav-link{
-  font-size: 20px;
-  font-weight: 300;
-  text-transform: uppercase;
+.navbar .nav-item .nav-link{
+  display: block;
 }
 
 .logo{
@@ -24,10 +23,28 @@ a.nav-link{
   display: block;
 }
 
-#about, #usługi, #spec, #lista{
+
+.o_klinice{
+  background-image: url("https://images.unsplash.com/photo-1445527815219-ecbfec67492e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 65vh;
+}
+
+.maska_Kl{
+  background-color: rgba(255, 255, 255, 0.9);
+  height: 100%;
+}
+
+.wow{
+  visibility: hidden;
+}
+
+/* #about, #usługi, #spec, #lista{
   padding-top: 100px;
   padding-bottom: 100px;
-}
+} */
 
 .column-view{
   position: relative;
@@ -35,9 +52,8 @@ a.nav-link{
 
 .featured-services{
   position: relative;
-  /* padding: 20px 0px 20px; */
-  background: #e3f2fd;
   overflow: hidden;
+  background-color: #fafafc;
 }
 
 .clearfix::after, .clearfix::before, .row::before{
@@ -51,9 +67,7 @@ a.nav-link{
 
 #leczenie_z{
   padding: 0px;
-  visibility: visible;
-  /* animation-duration: 1000ms;
-  animation-delay: 0ms; */
+  /* visibility: visible; */
 }
 
 #image_zęby{
@@ -190,6 +204,99 @@ a.nav-link{
 	animation-iteration-count: 1;
 }
 
+.specjalisty{
+  background-image: url("img/spec2.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+.carousel_y.carousel-indicators{
+  bottom: -30px;
+}
+
+.carousel_y.carousel-indicators li{
+  background-color: #bccaff;
+}
+
+.feature-main{
+  margin-top: 3em;
+}
+
+.feature-txt{
+  text-align: right;
+}
+
+.feature-txt{
+  margin: 3em 5em 0 0;
+  text-align: right;
+}
+
+.feature-txt h5{
+  font-size: medium;
+  color: #ffffff;
+  padding: 0.5em 2em;
+  background: #03b9f8;
+  position: relative;
+  display: inline-block;
+  border-radius: 25px;
+}
+
+.feature-txt i.fas{
+  margin: 5px;
+  position: relative;
+}
+
+.feature-txt i.fa{
+  position: relative;
+  margin: 5px;
+}
+
+.feature-img{
+  margin-top: 3em;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.feature-main.fm-right .feature-txt{
+  text-align: left;
+  margin: 3em 0 0 5em;
+}
+
+.feature-txt h5:before, .fm-right .feature-txt h5:before{
+  content: '';
+  position: absolute;
+  top: 21px;
+  right: -170px;
+  display: block;
+  background: #03b9f8;
+  width: 90%;
+  height: 1px;
+}
+
+.fm-right .feature-txt h5:before{
+  left: -168px;
+  position: absolute;
+  z-index: 0;
+}
+
+.feature-txt h5:after, .fm-right .feature-txt h5:after{
+  content: '';
+  position: absolute;
+  top: 16px;
+  right: 8px;
+  display: block;
+  background: #fff;
+  width: 11px;
+  border-radius: 50%;
+  height: 11px;
+}
+
+.fm-right .feature-txt h5:after{
+  left: 5px;
+}
+
 .clinicImg{
   cursor: pointer;
   transition: 0.3s;
@@ -279,23 +386,34 @@ a.nav-link{
   }  
 }
 
-/* @media screen and (max-width : 769px){
-  #intro{
-    background-image: url(img/mobile-device.jpg);
+@media (min-width: 992px){
+  a.nav-link{
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+  } 
+}
+
+@media (max-width: 992px){
+  .navbar.nav-item.nav-link{
+    padding-right: 6px;
+    padding-left: 6px;
   }
-} */
+}
 
 @media screen and (max-width : 480px){
   #one_page{
-/*     background-image: url(img/mobile-device.jpg); */
-    background-repeat: no-repeat;
-    background-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    background: url(img/mobile-device2.jpg);
     background-size: cover;
+    background-position: center;
     width: 100%;
-    min-height: 650px;
+    height: 100vh;
+  }
+}
+
+@media (min-width: 992px){
+  .h1-responsive{
+    font-size: 200%;
   }
 }
   
@@ -303,11 +421,229 @@ a.nav-link{
   .modal-content{width: 100%;}
 }
 
-@media (max-width: 376px){
-  .w-75{
-    width: 100%!important;
+@media screen and (max-width: 1050px){
+  .feature-main{
+    margin-top: 2.5em;
   }
 }
+
+@media screen and (max-width: 991px){
+  .feature-main{
+    margin-top: 0.5em;
+  }
+}
+
+@media screen and (max-width: 667px){
+  .feature-main{
+    margin-top: -0.2em;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 640px){
+  .feature-main{
+    margin-top: 0em;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .feature-main{
+    margin-top: -0.5em;
+  }
+}
+
+@media screen and (max-width: 568px){
+  .feature-main, .feature-img{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1080px){
+  .feature-txt{
+    margin: 2em 5em 0 0;
+  }
+}
+
+@media screen and (max-width: 991px){
+  .feature-txt{
+    margin: 2em 0.5em;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 568px){
+  .feature-txt{
+    width: 33%;
+    text-align: center;
+    float: left;
+    margin: 0 0 2em;
+    margin-bottom: 1em;
+  }
+}
+
+@media screen and (max-width: 1080px){
+  .feature-txt h5{
+    padding: 0.5em 1.8em;
+  }
+}
+
+@media screen and (max-width: 991px){
+  .feature-txt h5{
+    padding: 0.5em 0.5em;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 736px){
+  .feature-txt h5{
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 640px){
+  .feature-txt h5{
+    font-size: 0.9em;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .feature-txt h5{
+    font-size: 1em;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1080px){
+  .feature-txt h5:before, .fm-right .feature-txt h5:before{
+    width: 58%;
+  }
+}
+
+@media screen and (max-width: 991px){
+  .feature-txt h5:before{
+    top: 14px;
+    width: 75%;
+    right: -106px;
+  }
+}
+
+@media screen and (max-width: 991px){
+  .fm-right .feature-txt h5:before{
+    top: 14px;
+    width: 75%;
+    left: -95px;
+  }
+}
+
+@media screen and (max-width: 736px){
+  .feature-txt h5:before, .fm-right .feature-txt h5:before{
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 667px){
+  .feature-txt h5:before, .fm-right .feature-txt h5:before{
+    width: 67%;
+    right: -59px;
+  }
+}
+
+@media screen and (max-width: 640px){
+  .feature-txt h5:before, .fm-right .feature-txt h5:before{
+    top: 13px;
+  }
+}
+
+@media screen and (max-width: 991px){
+  .feature-txt h5:after, .fm-right .feature-txt h5:after{
+    width: 8px;
+    height: 8px;
+    top: 10.5px;
+    margin-right: -5px;
+  }
+}
+
+@media screen and (max-width: 640px){
+  .feature-txt h5:after, .fm-right .feature-txt h5:after{
+    top: 9px;
+  }
+}
+
+@media screen and (max-width: 568px){
+  .feature-txt h5:before, .fm-right .feature-txt h5:before,
+  .feature-txt h5:after, .fm-right .feature-txt h5:after{
+    width: 0;
+  }
+}
+
+@media screen and (max-width: 991px){
+  .feature-txt i.fa, .feature-txt i.fas{
+    margin: 0 1em;
+  }
+}
+
+@media screen and (max-width: 1080px){
+  .feature-img{
+    margin-top: 0.5em;
+  }
+}
+
+@media screen and (max-width: 991px){
+  .feature-img{
+    padding: 1em;
+  }
+}
+
+@media screen and (max-width: 667px){
+  .feature-img{
+    margin-top: 1em;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .feature-img{
+    margin-top: -25px;
+  }
+}
+
+@media screen and (max-width: 1080px){
+  .feature-main.fm-right .feature-txt{
+    margin: 2em 0 5em;
+  }
+}
+
+@media screen and (max-width: 991px){
+  .feature-main.fm-right .feature-txt{
+    margin: 2em 1em 2em;
+  }
+}
+
+@media screen and (max-width: 568px){
+  .feature-main.fm-right .feature-txt{
+    text-align: center;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .feature-main.fm-right .feature-txt{
+    text-align: center;
+    float: left;
+    width: 33%;
+    margin: 2.5em 0 0;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .feature-txt, .feature-main.fm-right .feature-txt{
+    width: 100%;
+    margin: 0 0 1em;
+  }
+}
+
+
+
+
 
 
 
