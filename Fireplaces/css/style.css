@@ -543,10 +543,6 @@ body.modal-open{
   overflow: auto;
 }
 
-/* input[type="text"]::placeholder { color: #FF1053; } 
-input[type="email"]::placeholder { color: #FF1053; } 
-textarea[type="message"]::placeholder{color: #FF1053;}
- */
 .modal{
   padding-top: 100px;
   backdrop-filter: blur(8px);
@@ -854,6 +850,7 @@ textarea[type="message"]::placeholder{color: #FF1053;}
 .price .features li:last-child {
   margin-bottom: 0;
 }
+
 .price .butn {
   padding: 10px 50px;
   z-index: 1;
@@ -992,6 +989,7 @@ footer p {
   color: #999;
   font-weight: 400;
   font-size: 12px;
+  /* text-transform: uppercase; */
   letter-spacing: 2px;
 }
 
@@ -1131,6 +1129,10 @@ footer p {
     width: 50%;
   }
 
+  .portfolio .item-img-overlay h6{
+    font-size: 10px;
+  }
+
   .featurse .content {
     padding: 0;
     margin-bottom: 50px;
@@ -1228,3 +1230,5 @@ footer p {
     padding: 8px 15px;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
