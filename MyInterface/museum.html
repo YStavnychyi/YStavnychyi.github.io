@@ -1,0 +1,164 @@
+<!<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Museum 3D</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--Css files-->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/fm.revealator.jquery.min.css" rel="stylesheet">
+        <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+
+        <script type="text/javascript" src="js/jquery/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery/jquery.jcarousel.min.js"></script>
+
+        <script type="text/javascript" src="js/carousel.js"></script>
+
+    </head>
+    <body class="exhibits">
+      <header>
+        <div class="menu">
+          <nav class="navbar navbar-dark fixed-top">
+            <!-- Brand -->
+            <a class="navbar-brand" href="museum.html">
+              <img class="logo" src="css/img/logo_museum.png">
+            </a>
+          
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="true" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbarsExample01">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="museum.html">Strona główna</a>
+                </li>
+                <!-- <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="dropdown" data-toggle="dropdown"  aria-expanded="true">Rodzaje eksonatów</a>
+                  <div class="dropdown-menu" aria-labelledby="dropdown">
+                    <a class="dropdown-item" href="museum.html">- Wszystkie eksponaty</a>
+                    <a class="dropdown-item" href="obrazy.html">- Obrazy</a>
+                    <a class="dropdown-item" href="rzezby.html">- Rzeżby</a>
+                    <a class="dropdown-item" href="samochody.html">- Samochody</a>
+                  </div>
+                </li> -->
+                <li class="nav-item">
+                  <a class="open-modal_filtr nav-link" href="#">Filtr</a>
+                </li>
+                <div class="modal_filtr">
+                  <div class="modal__content" style="text-align: center;">
+                    <div class="filtr">
+                      <div id="myBtnContainer">
+                        <button class="btn active" onclick="filterSelection('all')">Pokaż wszystko</button>
+                        <button class="btn" onclick="filterSelection('obrazy')">Obrazy</button>
+                        <button class="btn" onclick="filterSelection('rzezby')">Rzeżby</button>
+                        <button class="btn" onclick="filterSelection('samochody')">Samochody</button>
+                      </div>
+                      <div class="container justify-content-center">
+                        <div class="filterDiv obrazy"><a href="exhibits/exhibit_5.html">Trwałość pamięci</a></div>
+                        <div class="filterDiv rzezby"><a href="exhibits/exhibit_2.html">Małe macierzyństwo</a></div>
+                        <div class="filterDiv rzezby"><a href="exhibits/exhibit_3.html">Waza kanopska</a></div>
+                        <div class="filterDiv rzezby"><a href="exhibits/exhibit_4.html">Głowa AmenhotepaIII</a></div>
+                        <div class="filterDiv samochody"><a href="exhibits/exhibit_1.html">Porsche 911</a></div>
+                      </div>
+                      <button class="modalFiltr__close">Close</button>
+                    </div>
+                  </div>
+                </div>
+                <li class="nav-item">
+                  <a class="open-modal_help nav-link" href="#">Help</a>
+                </li>
+                <div class="modal_help">
+                  <div class="modal__content">
+                      <div class="help">
+                          <h1>Help</h1>
+                          <h2>
+                            Aby nie napotkać problemów podczas przeglądania strony użytkownik powinien sprawdzić, 
+                            czy jego przeglądarka obsługuje WebGL. Można to sprawdzić na tej stronie - <a href="https://get.webgl.org/">Kliknij.</a>
+                            <br>Dokumentacja projektu - <a href="Dokumentacja.docx">Pobieranie pliku.</a>
+                          </h2>
+                          <button class="modalHelp__close">Close</button>
+                      </div>
+                  </div>
+                </div>
+                <!-- <form class="form-inline my-2 my-md-0">
+                  <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+                </form> -->
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <section class="exhibit">
+          <h1>Eksponaty</h1>
+          <div class="wrapper">
+            <div class="jcarousel-wrapper">
+              <div class="jcarousel" data-jcarousel="true">
+                <ul>
+                  <li>
+                    <img src="exhibits/slide_2.jpg" alt=""><h3>Małe macierzyństwo</h3>
+                    <p class="hero-link">
+                      <a href="exhibits/exhibit_2.html" aria-label="Dowiedz się więcej o eksponacie">
+                        <span>Dowiedz się więcej ></span>
+                      </a>
+                    </p>
+                  </li>
+                  <li>
+                    <img src="exhibits/slide_5.jpg" alt=""><h3>Trwałość pamięci</h3>
+                    <p class="hero-link">
+                      <a href="exhibits/exhibit_5.html" aria-label="Dowiedz się więcej o eksponacie">
+                        <span>Dowiedz się więcej ></span>
+                      </a>
+                    </p>
+                  </li>
+                  <li>
+                    <img src="exhibits/slide_1.jpg" alt=""><h3>Porsche 911</h3>
+                    <p class="hero-link">
+                      <a href="exhibits/exhibit_1.html" aria-label="Dowiedz się więcej o eksponacie">
+                        <span>Dowiedz się więcej ></span>
+                      </a>
+                    </p>
+                  </li>
+                  <li>
+                    <img src="exhibits/slide_4.jpg" alt=""><h3>Głowa Amenhotepa III</h3>
+                    <p class="hero-link">
+                      <a href="exhibits/exhibit_4.html" aria-label="Dowiedz się więcej o eksponacie">
+                        <span>Dowiedz się więcej ></span>
+                      </a>
+                    </p>
+                  </li>
+                  <li>
+                    <img src="exhibits/slide_3.jpg" alt=""><h3>Waza kanopska</h3>
+                    <p class="hero-link">
+                      <a href="exhibits/exhibit_3.html" aria-label="Dowiedz się więcej o eksponacie">
+                        <span>Dowiedz się więcej ></span>
+                      </a>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <a href="#" class="jcarousel-control-prev" data-jcarouselcontrol="true"> < </a>
+              <a href="#" class="jcarousel-control-next" data-jcarouselcontrol="true"> > </a>
+
+              <p class="jcarousel-pagination"></p>
+            </div>
+          </div>
+        </section>
+      </main>
+        <!-- Additional funds -->
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+        <!-- My codes -->
+        <script type="text/javascript" src="js/modal.js"></script>
+        <script type="text/javascript" src="js/filtr.js"></script>
+    </body>
+</html>

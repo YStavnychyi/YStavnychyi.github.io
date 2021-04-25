@@ -1,0 +1,134 @@
+<!<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Museum 3D</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--Css files-->
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fm.revealator.jquery.min.css" rel="stylesheet">
+        <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/style.css">
+
+    </head>
+    <body class="exhibits">
+      <header>
+        <div class="menu">
+          <nav class="navbar navbar-dark fixed-top">
+            <!-- Brand -->
+            <a class="navbar-brand" href="exhibit_2.html">
+              <img class="logo" src="../css/img/logo_museum.png">
+            </a>
+          
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="true" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbarsExample01">
+              <ul class="navbar-nav mr-auto" style="background: rgb(0 0 0 / 50%);">
+                <li class="nav-item">
+                  <a class="nav-link" href="../museum.html">Strona główna</a>
+                </li>
+                <li class="nav-item">
+                  <a class="open-modal_filtr nav-link" href="#">Filtr</a>
+                </li>
+                <div class="modal_filtr">
+                  <div class="modal__content" style="text-align: center;">
+                    <div class="filtr">
+                      <div id="myBtnContainer">
+                        <button class="btn active" onclick="filterSelection('all')">Pokaż wszystko</button>
+                        <button class="btn" onclick="filterSelection('obrazy')">Obrazy</button>
+                        <button class="btn" onclick="filterSelection('rzezby')">Rzeżby</button>
+                        <button class="btn" onclick="filterSelection('samochody')">Samochody</button>
+                      </div>
+                      <div class="container justify-content-center">
+                        <div class="filterDiv obrazy"><a href="exhibit_5.html">Trwałość pamięci</a></div>
+                        <div class="filterDiv rzezby"><a href="exhibit_2.html">Małe macierzyństwo</a></div>
+                        <div class="filterDiv rzezby"><a href="exhibit_3.html">Waza kanopska</a></div>
+                        <div class="filterDiv rzezby"><a href="exhibit_4.html">Głowa AmenhotepaIII</a></div>
+                        <div class="filterDiv samochody"><a href="exhibit_1.html">Porsche 911</a></div>
+                      </div>
+                      <button class="modalFiltr__close">Close</button>
+                    </div>
+                  </div>
+                </div>
+                <li class="nav-item">
+                  <a class="open-modal_help nav-link" href="#">Help</a>
+                </li>
+                <div class="modal_help">
+                  <div class="modal__content">
+                      <div class="help">
+                          <h1>Help</h1>
+                          <h2>
+                            Aby nie napotkać problemów podczas przeglądania strony użytkownik powinien sprawdzić, 
+                            czy jego przeglądarka obsługuje WebGL. Można to sprawdzić na tej stronie - <a href="https://get.webgl.org/">Kliknij.</a>
+                            <br>Dokumentacja projektu - <a href="../Dokumentacja.docx">Pobieranie pliku.</a>
+                          </h2>
+                          <button class="modalHelp__close">Close</button>
+                      </div>
+                  </div>
+                </div>
+                <!-- <form class="form-inline my-2 my-md-0">
+                  <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+                </form> -->
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <section class="description">
+          <div class="container-fluid">
+            <div class="row">
+                <div class="col image">
+                  <!-- 1 из 2 -->
+                  <img src="slide_2.jpg" alt="">
+                </div>
+                <div class="col">
+                  <!-- 2 из 2 -->
+                  <h1>Małe macierzyństwo</h1>
+                  <h3>P. Gargallo/1922</h3>
+                  <p>
+                    <span>Macierzyństwo to temat, który Gargallo wielokrotnie poruszał w całej swojej karierze, chociaż zawsze poświęcał mu prace o niewielkich rozmiarach i wyraźnie intymnym charakterze. Jeśli chodzi o prace rzeźbiarskie (ponieważ wykonał również kilka rysunków, głównie notatek, na ten temat), oprócz Matki Boskiej [z Dzieciątkiem], ok. 1894, i dwie płaskorzeźby na fakturą miedzianej, oba 1916 roku, zrobili ten symboliczny próbkę jego osobistej techniki naprawdę wyjątkowych odwróconych woluminów i obrazów klasycznych trendy i niewielkich rozmiarów, w 1927 i 1931 roku, dwóch zbiorów muzeum Pablo Gargallo.
+                      Poświęcił swojej matce gipsowe popiersie (z którego dziś przechowywany jest brązowy egzemplarz w domu rodzinnym Maelli) i małą, pełnowymiarową postać z marmuru - oba dzieła wykonane na pamięć w 1926 r., kilka miesięcy po śmierci Petry Catalan, a także kilka doskonałych i bardzo wyrazistych rysunków.</span>
+                  </p>
+                  <form class="form">
+                    <input type="hidden" name="project_name" value="Comment Exhibit_2">
+		                <input type="hidden" name="admin_email" value="example@gmail.com">
+		                <input type="hidden" name="form_subject" value="Comment">
+                    <div class="form-group">
+                      <span class="icon-form"><i class="fas fa-pencil-alt"style="color: #ccc;"></i></span>
+                      <textarea class="md-textarea form-control" id="form_message" name="message" placeholder="Zostaw komentarz" rows="4" required="required"></textarea>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                      <button class="butn butn-light mb-30">
+                        <span> Wysłać </span>
+                    </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+          </div>
+        </section>
+      </main>
+      <footer class="page-footer">
+        <div class="container-fluid text-right">
+          <a class="icon" href="../museum.html"><i class="fas fa-arrow-circle-left"></i></a>
+        </div>
+      </footer>
+        <!-- Additional funds -->
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+        <!-- My codes -->
+        <script type="text/javascript" src="../js/modal.js"></script>
+        <script type="text/javascript" src="../js/comments.js"></script>
+        <script type="text/javascript" src="../js/filtr.js"></script>
+      </body>
+</html>

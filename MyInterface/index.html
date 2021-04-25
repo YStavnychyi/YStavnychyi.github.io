@@ -1,0 +1,67 @@
+<!<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Museum 3D</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--Css files-->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/fm.revealator.jquery.min.css" rel="stylesheet">
+        <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header class="pr">
+            <div id = "grid" class="pa z0"></div>
+            <nav class="pr z1 item navbar navbar-expand-md ">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#" class="open-modal"><i class="far fa-question-circle"></i></a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="modal">
+                <div class="modal__content">
+                    <div class="help">
+                        <h1>Help</h1>
+                        <h2>
+                            Aby nie napotkać problemów podczas przeglądania strony użytkownik powinien sprawdzić, 
+                            czy jego przeglądarka obsługuje WebGL. Można to sprawdzić na tej stronie - <a href="https://get.webgl.org/">Kliknij.</a>
+                            <br>Dokumentacja projektu - <a href="Dokumentacja.docx">Pobieranie pliku.</a>
+                        </h2>
+                        
+                        <button class="modal__close">Close</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class = "home">
+            <img src="css/img/logo.png" alt="">
+            <p class="subtitle">Jest to najnowsze Muzeum 3D, które zawiera najbardziej uderzające eksponaty na świecie.<br>
+                Tutaj możesz zobzczyć eksponaty samochodów 3D, a także dzieła sztuki.
+            </p>
+            <a href="museum.html">
+                <button class="register">Odwiedź</button>
+            </a>
+        </div>
+
+        
+        <script src="js/three.r119.min.js"></script>
+        <script src="js/vanta.net.min.js"></script>
+        <script>
+        VANTA.NET({
+            el: "#grid",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 753,
+            minWidth: 100.00,
+            scale: 1.00,
+            scaleMobile: 1.00
+        })
+        </script>
+        <script src="js/modalHelp.js" async defer></script>
+    </body>
+</html>
