@@ -103,7 +103,7 @@ a:hover{
 
 .modal__close:hover{
     color: white;
-    background: #666;    
+    background: rgb(0, 0, 0);    
     transition: all .3s linear;
 }
 
@@ -175,7 +175,7 @@ a:hover{
 
 .modalFiltr__close:hover{
     color: white;
-    background: #666;    
+    background: rgb(0, 0, 0);    
     transition: all .3s linear;
 }
   
@@ -225,7 +225,7 @@ a:hover{
 
 .modalHelp__close:hover{
     color: white;
-    background: #666;    
+    background: rgb(0, 0, 0);    
     transition: all .3s linear;
 }
 /* HELP end */

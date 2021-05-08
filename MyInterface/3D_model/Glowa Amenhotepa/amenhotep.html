@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../Porsche/styles.css" />
+    <title>Głowa Amenhotepa III</title>
+</head>
+<body>
+    <script src="https://threejs.org/build/three.js"></script>
+    <script src="../Porsche/GLTFLoader.js"></script>
+    <script src="../Porsche/OrbitControls.js"></script>
+    <script>
+        let scene, camera, renderer;
+
+        function init(){
+            scene = new THREE.Scene();
+            renderer = new THREE.WebGLRenderer({antialias:true});
+            renderer.setSize(window.innerWidth,window.innerHeight);
+            document.body.appendChild(renderer.domElement);
+            scene.background = new THREE.Color(0xdddddd);
+
+            camera = new THREE.PerspectiveCamera(5,window.innerWidth/window.innerHeight,1,5000);
+            camera.rotation.y = 45/180*Math.PI;
+            camera.position.x = 2;
+            camera.position.y = 0;
+            camera.position.z = 5;
+            
+            controls = new THREE.OrbitControls(camera, renderer.domElement);
+            controls.addEventListener('change', renderer);
+
+            hlight = new THREE.AmbientLight(0x090909,50);
+            scene.add(hlight);
+
+            let loader = new THREE.GLTFLoader();
+            loader.load('scene.gltf', function(gltf){
+                glowa = gltf.scene.children[0];
+                glowa.scale.set(0.5,0.5,0.5);
+                scene.add(gltf.scene);
+               animate();
+            });
+        }
+        function animate(){
+            renderer.render(scene,camera);
+            requestAnimationFrame(animate);
+        }
+        init();
+    </script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+Model Information:
+* title:	Vas Canopi
+* source:	https://sketchfab.com/3d-models/vas-canopi-b1a604391f794f88a8af62db651778a8
+* author:	Onaris Patrimonio Virtual (https://sketchfab.com/Onaris)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Vas Canopi" (https://sketchfab.com/3d-models/vas-canopi-b1a604391f794f88a8af62db651778a8) by Onaris Patrimonio Virtual (https://sketchfab.com/Onaris) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
