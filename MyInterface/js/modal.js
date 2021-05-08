@@ -9,28 +9,24 @@ openModalHelp.addEventListener('click', e => {
   e.preventDefault()
   
   modal_help.classList.add('modal--open')
-  /* body.classList.add('body-lock') */
 })
 
 openModalFiltr.addEventListener('click', e => {
   e.preventDefault()
   
   modal_filtr.classList.add('modal--open')
-  /* body.classList.add('body-lock') */
 })
 
 closeModalHelp.addEventListener('click', e => {
   e.preventDefault()
   
   modal_help.classList.remove('modal--open')
-  /* body.classList.remove('body-lock') */
 })
 
 closeModalFiltr.addEventListener('click', e => {
   e.preventDefault()
   
   modal_filtr.classList.remove('modal--open')
-  /* body.classList.remove('body-lock') */
 })
 
 
