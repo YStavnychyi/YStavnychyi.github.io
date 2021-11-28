@@ -226,3 +226,14 @@ h1{
         opacity: 0;
     }
 }
+
+@media screen and (max-width: 576px){
+    .management-todo{
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .tasks-filter .btn{
+        font-weight: bold;
+    }
+}
