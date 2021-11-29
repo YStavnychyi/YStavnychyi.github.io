@@ -425,6 +425,7 @@ body.light.blog .page-item.active .page-link {
 }
 
 .home .home-details p {
+  text-align: justify;
   margin: 10px 0 23px;
   font-size: 16px;
   line-height: 32px;
